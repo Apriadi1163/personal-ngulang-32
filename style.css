@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*nav bar*/
+nav{
+    display: flex;
+    background-color: #f4f3f3;
+    height: 7%;
+}
+
+nav div{
+    flex: 50%;
+    align-items: center;
+    display: flex;
+}
+
+.left-side{
+    padding-left: 90px;
+}
+
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .right-side a{
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border:none;
+    border-radius: 10px;
+}
+
+.kontakApriadi{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 50% ; 
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 10px ;
+}
+
+/* bagian clas poto */
+.potoa {
+    border: 3px;
+    padding: 10px;
+    width: 350px;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.potoa h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+/*downlaod*/
+.bagian-index {
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+/*icon */
+.ikon i {
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    padding: 5px;
+    border-radius: 100px;
+    justify-content: center;
+}
+  
+/*bagian2 */
+.kotakBesar {
+    display: flex;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.kotakBesar .PembuatanFlex {
+    display: flex;
+    width: 80%;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.kotakBesar .BagianKiri {
+    flex: 60%;
+    background-color: white;
+    margin-left: 20px;
+}
+
+
+.kotakBesar .BagianKanan {
+    flex: 40%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px;
+    border-radius: 5px;
+}
+
+.kotakBesar .BagianKanan .h3 {
+    text-align: center;
+}
+
+.kotakBesar .BagianKanan p {
+    margin-bottom: 5px;
+}
+
+.bagian-krusial {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bagian-krusial button {
+    width: 120px;
+    margin-right: 20px;
+    background-color: rgb(27, 22, 22);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 4px 10px;
+}
+
+/*bagian inti (contact)*/
+.bagianInti {
+    border: 3px;
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    background: white;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+/*form contact */
+
+.container {
+    border: 3px;
+    padding: 30px;
+    width: 700px;
+    margin: auto;
+    background: white;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #DAD4D4;
+}
+.container .nama input{
+    width: 100%;
+    box-sizing:border-box;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 8px;
+    border: px solid rgb(233, 227, 227);
+    background: #f4f3f3;
+}
+
+.container label {
+    font-size: 20px; 
+    font-weight: 700;
+}
+
+.container .email input{
+    width:100%;
+    box-sizing:border-box;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 8px;
+    border: px solid rgb(233, 227, 227);
+    background: #f4f3f3;
+}
+
+.container .angka input{
+    width:100%;
+    box-sizing:border-box;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 8px;
+    border: px solid rgb(233, 227, 227);
+    background: #f4f3f3;
+}
+
+.container .pilih select { 
+    width:100%;
+    box-sizing:border-box;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 8px;
+    border: px solid rgb(233, 227, 227);
+    background: #f4f3f3;
+}
+
+.container .pesan input {
+    width:100px;
+    box-sizing:border-box;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 8px;
+    border: px solid rgb(233, 227, 227);
+    background: #f4f3f3;
+    resize: none;
+}
+
+.container button {
+    padding: 8px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+/*my project form*/
+.MyProject-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.MyProject-form .form-container {
+    width: 500px;
+}
+
+.MyProject-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.MyProject-form .bagianLebih1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.MyProject-form .bagianLebih2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.MyProject-form .waktu .kiriD {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.MyProject-form .waktu .kananD {
+    font-size: 20px;
+    font-weight: 400;
+}
+.waktu input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+.bagianLebih2 textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.bagianLebih1 input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+
+.bagianLebih2 textarea {
+    height: 100px;
+}
+
+.MyProject-form .input-myproject-image {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.lambang {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.MyProject-form form .input-myproject-image label p {
+    font-size: 15px;
+}
+
+.MyProject-form form .input-myproject-image label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MyProject-form form .button-group {
+    text-align: right;
+}
+
+.MyProject-form form button {
+    width: 30%;
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: black;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.MyProject-form .waktu {
+    width: 100%;
+    display: flex;
+    
+}
+
+.MyProject-form .waktu .kiriD {
+    display: flex-start;
+}
+
+
+
+/* halaman bawah project */
+.partbawah {
+    padding: 20px;
+    background: white;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.myprojectlist {
+    display: flex;
+    border: 50px;
+    padding-left: 30px;
+  
+}
+.myprojectlist .myprojectlistitem {
+    display: flex;
+    flex: 20%;
+    border: 20px;
+    margin: 5px;
+}
+
+
+.edit {
+    padding: 5px 30px;
+    border: 0;
+    border-radius: 4px;
+    background: gray;
+    margin-right: 20px;
+    padding: 5px 70px;
+    float: left;
+    color: wheat;
+   
+}
+  
+.delete {
+    padding: 5px 70px;
+    border: 0;
+    border-radius: 4px;
+    background: gray;
+    color: #fff;
+}
+
+/* My project detail */
+.keseluruhan {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.MyProject-detail {
+    width: 80%;
+    margin: 40px 0;
+    
+}
+
+.container-detail2 {
+    flex: 100%;
+    display: flex;
+}
+
+
+.MyProject-detail .kiriDetail img {
+    width: 100%;
+}
+
+.MyProject-detail .kananDetail {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 90px;   
+    
+}
+
+.MyProject-detail p  {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+</head>
+<body>
+    <!-- Nav Start-->
+    <nav>
+        <div class="left-side">
+            <a href="bagian2.html">
+                <img src="assets/logo.png"/>
+            </a>
+            <ul>
+                <li>
+                    <a href="bagian2.html">Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+
+        </div>
+    </nav>
+    <!-- Nav end-->
+
+    <!--My project-->
+    <div class="MyProject">
+        <div class="MyProject-form">
+            <div class="form-container">
+                <form onsubmit="addMyProject(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div class="bagianLebih1">
+                        <label for="project-name">Project Name</label>
+                        <input id="project-name"/>
+                    </div>
+                    <div class="waktu">
+                        <div class="kiriD">
+                            <label for="start-date">Start Date</label>
+                            <input id="start-date" type="date"/> 
+                        </div>
+                        <div class="kananD">
+                            <label for="end-date">End Date</label>
+                            <input id="end-date" type="date"/>
+                        </div>
+                            
+                    </div>
+                    <div class="bagianLebih2">
+                        <label for="description">Description</label>
+                        <textarea id="description"></textarea>
+                    </div>
+        
+                    <h3>Teknogies</h3>
+                    <div class="pilihCek">
+                        <div>
+                            <input type="checkbox" id="nodeJs" name="nodeJs" value="nodeJs"  style="margin-top: 20px; margin-right: 5px; margin-bottom: 30px;"/>
+                            <label for="nodeJs" style="margin-right: 80px;">Node Js</label>
+                            <input type="checkbox" id="reactJs" name="reactJs" value="assets/facebook.png" style="margin-right: 5px; margin-bottom: 30px;"/>
+                            <label for="reactJs">React Js</label>
+                        </div>
+                    
+                        <div>
+                            <input type="checkbox" id="NextJs" name="NextJs" value="assets/deploy.png" style="margin-right: 5px;"/>
+                            <label for="NextJs" style="margin-right: 81px;">Next Js</label>
+                            <input type="checkbox" id="typeScript" name="typeScript" value="assets/instagram.png" style="margin-right: 5px; " />
+                            <label for="typeScript">TypeScript</label>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <label>Upload Image</label>
+                        <div class="input-myproject-image">
+                            <label for="input-myproject">
+                                <buton>choose</buton>
+                                <img src="assets/file.png" alt="file"/>
+                            </label>
+                            <input type="file" id="input-myproject" hidden />
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button>submit</button>
+                    </div>
+                    <div id="pic1">
+
+                    </div>
+
+                </form>
+           </div>
+        </div>
+        <hr />
+        <h1 style="text-align: center; margin-bottom: 80px;">My Project</h1>
+        <div id="contents" class="myprojectlist">
+            <div class="myprojectlistitem">
+                
+                <!--Halaman dibwah project-->
+                <div class="partbawah">
+             
+                    <div class="myproject-image">
+                        <img src="assets/file1.png" alt="bagianbawah1"/>
+                    </div>
+                    <div class="informasi">
+                        <h3>
+                        <a href="detail.html" target="_blank" style="text-decoration:none;">Dumbways Mobile App</a>
+                        </h3>
+                        <p style="color: gray; margin-bottom: 10px;">durasi 3 bulan</p>
+                        
+                    </div>
+                    <p>App that used for dumbways student it was </p>
+                    <p>deployed and can download on playstore </p>
+                    <p>happy download </p>
+                
+                    
+                    <div class="lambang" style="margin-top: 20px; margin-bottom: 20px; margin-right: 20px;">
+                        <i class="fab fa-google-play" style="margin-right: 10px;"></i>
+                        <i class="fab fa-android" style="margin-right: 10px;"></i>
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                
+                </div>
+            </div>
+        </div>
+        <script src="Myproject.js"></script>
+    </div>
+</body>
+</html>

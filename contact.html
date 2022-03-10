@@ -1,0 +1,74 @@
+<head>
+    <title>contact Me</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body bgcolor="#DAD4D4">
+    <!-- Nav Start-->
+    <nav>
+        <div class="left-side">
+            <a href="bagian2.html">
+                <img src="assets/logo.png"/>
+            </a>
+            <ul>
+                <li>
+                    <a href="bagian2.html">Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+
+        </div>
+    </nav>
+    <!-- Nav end-->
+    <div class="container">
+        <h1 style="text-align: center;">GET IN TOUCH</h1>
+        <div class="card">
+          <form action="#" id="formInput" method="POST" enctype="multipart/form-data">
+            <div class="nama">
+                <label for="tname">Name</label>
+                <input type="text" required id="tname" name="tname" placeholder="Your name..">
+            </div>
+
+                <div class="email">
+                    <label for="temail">Email</label>
+                    <input type="email" required id="temail" name="temail" placeholder="Your email..">
+                </div>
+
+                <div class="angka">
+                    <label for="tnumber">Phone</label>
+                    <input type="text" required id="tnumber" name="tnumber" placeholder="Your number..">
+                </div>
+
+                <div class="pilih">
+                    <label for="tsubject">Subject</label>
+                    <select id="tsubject" name="tsubject">
+                        <option value="Fullstack Developer">Fullstack Developer</option>
+                        <option value="Front end">Front end</option>
+                    </select>
+                </div>
+
+                <div class="pesan">
+                    <label for="tmessage">Your Message</label>
+                    <textarea name="tmessage" id="tmessage" cols="40" rows="10"></textarea>
+                </div>
+                    <button type="button" onclick="showData()" >SUBMIT</button>
+               
+          </form>
+        </div>
+        
+     </div>
+
+     
+
+
+    
+    
+    <script src="form.js"></script>   
+</body>
+</html>
