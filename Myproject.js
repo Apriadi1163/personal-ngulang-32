@@ -7,7 +7,24 @@ function addMyProject(event) {
     let image = document.getElementById('input-myproject')
     let waktuAwal = document.getElementById('start-date').value
     let waktuAkhir =document.getElementById('end-date').value
-
+    let getIcon1 = document.getElementById('nodeJs')
+    let getIcon2 = document.getElementById('reactJs')
+    let getIcon3 = document.getElementById('NextJs')
+    let getIcon4 = document.getElementById('typeScript')
+    var printIcon = ""
+    if(getIcon1.checked == true) {
+        printIcon += `<i class="fa-brands fa-node-js"></i>`
+    }
+    if(getIcon2.checked == true){
+        printIcon += `<i class="fa-brands fa-react"></i>`
+    }
+    if(getIcon3.checked == true){
+        printIcon += `<i class="fab fa-java"></i>`
+    }
+    if(getIcon4.checked == true){
+        printIcon += `<i class="fa-brands fa-js"></i>`
+    } 
+   
     let date1 = new Date(waktuAwal)
     let date2 = new Date(waktuAkhir)
 
@@ -21,7 +38,9 @@ function addMyProject(event) {
         projectName: projectName,
         description,
         image,
-        postedAt: new Date()
+        gambarbaru: printIcon,
+        postedAt: getDistanceTime()
+        
     }
 
     myprojects.push(tampung)
@@ -32,21 +51,12 @@ function addMyProject(event) {
 function renderMyproject() {
     let lengthData = myprojects.length
     console.log(myprojects[0].image);
-
     let getIcon1 = document.getElementById('nodeJs')
     let getIcon2 = document.getElementById('reactJs')
     let getIcon3 = document.getElementById('NextJs')
     let getIcon4 = document.getElementById('typeScrypt')
 
     var printIcon = ""
-    if(getIcon1.checked == true) {
-        printIcon += `<img value="nodeJs" id="nodeJs" src="assets/deploy.png" alt="">`
-    }
-
-    var printIcon2 = ""
-    if(getIcon2.checked == true){
-        printIcon2 += `<img value="reactJs" id="reactJs" src="assets/facebook.png" alt="">`
-    }
 
     let myprojectContainer = document.getElementById('contents')
 
@@ -55,6 +65,7 @@ function renderMyproject() {
     myprojectContainer.innerHTML = firstMyprojectContent()
 
     // blogContainer = "data-default"
+   
 
     let i = 0
     for (i; i < lengthData; i++) {
@@ -68,17 +79,16 @@ function renderMyproject() {
                     </div>
                     <div class="informasi">
                         <h3>
-                        <a href="detail.html" target="_blank">${myprojects[i].projectName}</a>
+                        <a href="detail.html" target="_blank" style="text-decoration:none;">${myprojects[i].projectName}</a>
                         </h3>
-                        <p style="color: gray; margin-bottom: 10px;">durasi ${getdistancetime(myprojects[i].postedAt)}</p>
-                        
+                        <p style="color: gray; margin-bottom: 10px;">durasi  ${myprojects[i].postedAt}  </p>
+                       
+
                     </div>
                     <p>${myprojects[i].description}</p>
                     
-                    <div class="lambang">
-                       ${printIcon}
-                        <i class="fab fa-android"></i>
-                        <i class="fab fa-java"></i>
+                    <div class="lambang" style="margin-top: 20px; margin-bottom: 20px; margin-right: 30px; font-size: 25px;">
+                       ${myprojects[i].gambarbaru}
 
                     </div>
                     <button class="edit">Edit</button>
@@ -101,7 +111,7 @@ function firstMyprojectContent() {
                     </div>
                     <div class="informasi">
                         <h3>
-                        <a href="detail.html" target="_blank">Dumbways Mobile App</a>
+                        <a href="detail.html" target="_blank" style="text-decoration:none;">Dumbways Mobile App-2021</a>
                         </h3>
                         <p style="color: gray; margin-bottom: 10px;">durasi 3 bulan</p>
                         
@@ -109,9 +119,9 @@ function firstMyprojectContent() {
                     <p>App that used for dumbways student,</p>
                     <p>it was deployed and can download on playstore.</p>
                     <p> happy download</p>
-                    <div class="lambang">
-                        <i class="fab fa-google-play"></i>
-                        <i class="fab fa-android"></i>
+                    <div class="lambang" style="margin-top: 20px; margin-bottom: 20px; margin-right: 20px; font-size: 25px;">
+                        <i class="fab fa-google-play" style="margin-right: 10px;"></i>
+                        <i class="fab fa-android" style="margin-right: 10px;"></i>
                         <i class="fab fa-java"></i>
                     </div>
                     <button class="edit">Edit</button>
@@ -120,7 +130,7 @@ function firstMyprojectContent() {
             </div>`
 }
 
-function getdistancetime(time) {
+function getDistanceTime() {
     let waktuAwal = document.getElementById('start-date').value
     let waktuAkhir =document.getElementById('end-date').value
 
@@ -130,12 +140,26 @@ function getdistancetime(time) {
     let distance1 = date2.getTime() - date1.getTime();
     console.log(distance1)
     let distance2 = distance1 / (1000 * 3600 * 24);
-    
-    let penuh1 = `${distance2} hari`
-    
-   
-   
-    return penuh1
+    if (distance2 > 30 && distance2 < 60){
+        return `1 bulan ${distance2 -30} hari`
+    }else if(distance2 == 30){
+        return `1 bulan`
+    }else if(distance2 == 60){
+        return `2 bulan`
+    }else if(distance2 > 60 && distance2 < 90){
+        return `2 bulan ${distance2 - 60} hari`
+    }else if(distance2 == 90){
+        return `3 bulan`
+    }else if(distance2 > 90){
+        return `3 bulan ${distance2 - 90} hari`
+    }else{
+        return `${distance2} hari`
+    }
+
 }
+
+   
+
+
 
 
